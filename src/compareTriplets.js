@@ -1,0 +1,17 @@
+const prompt = require("prompt-sync")({ sigint: true });
+
+let inputArr;
+let arrAtas  = [];
+let arrBawah = [];
+
+while (true) {
+  inputArr = parseInt(prompt("Masukan Nilai array (ketik exit untuk berhenti): "));
+  // statement
+  if (Number.isInteger(inputArr)) {
+    arrayHolder.push(inputArr);
+    console.log(`Jumlah Array : `, arrayHolder);
+  }
+  else{
+    break;
+  }  
+}
